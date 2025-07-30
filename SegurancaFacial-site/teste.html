@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perguntas Frequentes</title>
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: 'Poppins', sans-serif;
+      padding: 2rem;
+      color: #1a1a1a;
+    }
+
+    h2 {
+      color: #0f2b46;
+    }
+
+    .faq {
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-question {
+      background-color: #cbddeb;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+      background-color: #b3d2eb;
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      transform: rotate(45deg); /* X */
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      margin-top: 0.5rem;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .faq-answer.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="faq">
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        O que é o sistema de reconhecimento facial para escolas?
+        <span class="faq-icon">×</span>
+      </div>
+      <div class="faq-answer">
+        O sistema é uma solução tecnológica que utiliza reconhecimento facial para identificar e autorizar responsáveis a buscarem crianças na escola, garantindo mais segurança e praticidade.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        O que acontece se uma pessoa não autorizada tentar buscar a criança?
+        <span class="faq-icon">×</span>
+      </div>
+      <div class="faq-answer">
+        O sistema automaticamente negará o acesso, e a escola será notificada imediatamente para que possa agir conforme necessário.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        E se o reconhecimento facial falhar?
+        <span class="faq-icon">×</span>
+      </div>
+      <div class="faq-answer">
+        Em raros casos em que o reconhecimento facial não funcione corretamente, a escola possui protocolos alternativos, como verificação manual por meio de documentos de identidade.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Como posso autorizar ou desautorizar uma pessoa?
+        <span class="faq-icon">×</span>
+      </div>
+      <div class="faq-answer">
+        Os responsáveis podem solicitar mudanças diretamente à administração da escola, que atualizará o cadastro no sistema de forma segura e ágil.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      question.addEventListener('click', () => {
+        answer.classList.toggle('show');
+      });
+    });
+  </script>
+
+</body>
+</html>

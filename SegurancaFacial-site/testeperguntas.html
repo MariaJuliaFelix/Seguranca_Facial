@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .services-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 p-4;
+  }
+
+  .service-card {
+    @apply bg-white rounded-xl shadow-md p-6 relative transition hover:shadow-xl;
+  }
+
+  .icon-box {
+    @apply bg-indigo-500 text-white p-3 rounded-xl w-fit absolute -top-6 left-6;
+  }
+
+  .service-card h3 {
+    @apply text-lg font-semibold mt-10 mb-2 flex items-center gap-2;
+  }
+
+  .service-card p {
+    @apply text-sm text-gray-500;
+  }
+
+  .service-card h3 span {
+    @apply text-indigo-500 text-base;
+  }
+</style>
+
+</head>
+<body>
+    <div class="services-grid">
+  <div class="service-card">
+    <div class="icon-box">
+      <img src="icone1.svg" alt="Ícone Custom Software">
+    </div>
+    <h3>Custom Software Development <span>➕</span></h3>
+    <p>Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="icon-box">
+      <img src="icone2.svg" alt="Ícone Software Integration">
+    </div>
+    <h3>Software Integration <span>➕</span></h3>
+    <p>Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="icon-box">
+      <img src="icone3.svg" alt="Ícone Mobile App">
+    </div>
+    <h3>Mobile App Development <span>➕</span></h3>
+    <p>Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="icon-box">
+      <img src="icone4.svg" alt="Ícone Business Analytics">
+    </div>
+    <h3>Business Analytics <span>➕</span></h3>
+    <p>Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam.</p>
+  </div>
+</div>
+
+</body>
+
