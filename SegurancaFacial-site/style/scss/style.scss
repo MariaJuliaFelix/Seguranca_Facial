@@ -1,0 +1,19 @@
+@use 'mixins';
+@use 'variaveis';
+@use 'header';
+@use 'inicio';
+@use 'beneficios';
+@use 'duvidas';
+@use 'modedark';
+@use 'footer';
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    justify-content: center;
+    background-color: #f7f7f7;
+}
