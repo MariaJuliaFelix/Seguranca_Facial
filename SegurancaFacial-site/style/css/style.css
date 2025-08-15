@@ -251,6 +251,44 @@ button:hover {
   line-height: 1.6;
 }
 
+.countainer-planos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.planos, .plano-principal {
+  width: 370px;
+  border-radius: 15px;
+  box-shadow: rgba(37, 37, 37, 0.363) 2px 2px 10px 5px;
+  border: 2px rgba(0, 0, 0, 0.692);
+  height: 500px;
+  padding: 2.3rem;
+  background-color: rgb(10, 86, 148);
+}
+.planos h2, .plano-principal h2 {
+  text-align: center;
+  font-weight: 600;
+}
+.planos h3, .plano-principal h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+.planos li, .plano-principal li {
+  color: white;
+}
+
+.plano-principal {
+  width: 370px;
+  height: 600px;
+  padding: 2rem;
+  background-color: rgb(10, 86, 148);
+}
+
 .faq h2 {
   color: #333;
   margin-bottom: 2rem;
